@@ -28,10 +28,10 @@ export const Header = () => {
 
 const StyledHeader = styled.header`
     background-color: #b4f480cc;
-
     display: flex;
-    justify-content: space-between;
-
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh;
     
 `
 
