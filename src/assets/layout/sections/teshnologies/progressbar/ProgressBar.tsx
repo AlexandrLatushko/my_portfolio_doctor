@@ -14,18 +14,21 @@ export const ProgressBar: React.FC<ProgressBarContainerProps> = ({ percentage, t
     );
 };
 
-
-
 const ProgressBarContainer: React.FC<ProgressBarContainerProps> = ({ percentage, title }) => {
     return (
-        <div style={{width:'50%', marginTop: '40px'}}>
+        <StyleBar>
             <Title >{title}</Title>
             <StyledProgressBarContainer>
                 <Filler percentage={percentage} />
             </StyledProgressBarContainer>
-        </div>
+        </StyleBar>
     );
 };
+
+const StyleBar = styled.div`
+    width: 50%;
+    margin-top: 40px;
+`
 
 const StyledProgressBar = styled.div`
     width: 100%;
