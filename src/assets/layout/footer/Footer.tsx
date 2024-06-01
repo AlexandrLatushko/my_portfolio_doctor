@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import { IconsLink } from '../../../componets/iconslink/IconsLink';
 import { Contacts } from '../../../componets/contakts/Contacts';
+import { theme } from '../../../styles/Theme';
 
 export const Footer = () => {
     return (
@@ -14,7 +15,7 @@ export const Footer = () => {
 
 const StyledFooter = styled.footer`
     min-height: 20vh;
-    background-color: #8effb06f;
+    background-color: ${theme.color.primaryBg};
     display: flex;
     justify-content: space-around;
     align-items: center;

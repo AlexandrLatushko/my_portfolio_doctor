@@ -21,6 +21,7 @@ export const IconsLink = () => {
 const StyledIconsLinks = styled.ul`
     display: flex;
     gap: 20px;
+    margin: 25px 0px;
 `
 
 const SryledIconsLink = styled.li`
