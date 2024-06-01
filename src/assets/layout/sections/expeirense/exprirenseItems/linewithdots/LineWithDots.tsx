@@ -1,12 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 
-export const LineWithDots = () => {
+type  LineWithDotspropsStyle = {
+    left?: string
+}
+
+export const LineWithDots = (props:LineWithDotspropsStyle) => {
     return (
         <Container>
             <DotWrapper>
                 <Label>2017</Label>
-                <Dot />
+                <Dot left={"-10px"} />
             </DotWrapper>
             <DotWrapper>
                 <Label>2019</Label>
@@ -18,7 +22,7 @@ export const LineWithDots = () => {
             </DotWrapper>
             <DotWrapper>
                 <Label>2023</Label>
-                <Dot />
+                <Dot left={"15px"} />
             </DotWrapper>
             <Line />
         </Container>
@@ -26,7 +30,7 @@ export const LineWithDots = () => {
 };
 
 const Container = styled.div`
-    padding: 70px 20px;
+    padding: 70px 0px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -52,7 +56,7 @@ const DotWrapper = styled.div`
     position: relative;
 `;
 
-const Dot = styled.div`
+const Dot = styled.div<LineWithDotspropsStyle>`
     width: 25px;
     height: 25px;
     background-color: #f9f9f9;
@@ -60,6 +64,7 @@ const Dot = styled.div`
     z-index: 1;
     position: absolute;
     bottom: 28px;
+    left: ${({left}) => left};
 `;
 
 const Label = styled.div`

@@ -11,10 +11,14 @@ export const Projects = () => {
         <StyledProjects>
             <SectionsTitle>Projects</SectionsTitle>
             <FlexWrapper wrap={'wrap'} justify={'space-around'} gap={'20px'}>
-                <Project src={projPhoto} title={"PROJECT 1"} text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}/>
-                <Project src={projPhoto} title={"PROJECT 2"} text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}/>
-                <Project src={projPhoto} title={"PROJECT 3"} text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}/>
-                <Project src={projPhoto} title={"PROJECT 4"} text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}/>
+                <Project src={projPhoto} title={"PROJECT 1"} 
+                text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}/>
+                <Project src={projPhoto} title={"PROJECT 2"} 
+                text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}/>
+                <Project src={projPhoto} title={"PROJECT 3"}
+                text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}/>
+                <Project src={projPhoto} title={"PROJECT 4"} 
+                text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}/>
             </FlexWrapper>
         </StyledProjects>
     );
