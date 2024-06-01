@@ -17,12 +17,17 @@ export const AddTeshnoloj = () => {
 
 const StyledAddTeshnoloj = styled.div`
     margin-top: 100px;
+    padding-bottom:170px;
 `
 
 const TitleTeshnoloj = styled.h3`
     text-align: center;
+
 `
 
 const TeshnolohIcons = styled.div`
-    
+    padding-top:70px;
+    display: flex;
+    justify-content: center;
+    gap: 50px
 `

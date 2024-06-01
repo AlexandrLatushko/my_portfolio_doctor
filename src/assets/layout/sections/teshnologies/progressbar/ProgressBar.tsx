@@ -25,7 +25,7 @@ const ProgressBarContainer: React.FC<ProgressBarContainerProps> = ({ percentage,
         <div style={{width:'50%', marginTop: '40px'}}>
             <Title >{title}</Title>
             <StyledProgressBarContainer>
-            <Filler percentage={percentage} />
+                <Filler percentage={percentage} />
             </StyledProgressBarContainer>
         </div>
     );
@@ -42,7 +42,6 @@ const StyledProgressBarContainer = styled.div`
 `;
 
 const Title = styled.div`
-     
     top: -30px;
     font-size: 14px;
     color: #333;
