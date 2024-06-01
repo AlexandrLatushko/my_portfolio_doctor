@@ -21,5 +21,5 @@ export const Projects = () => {
 };
 
 const StyledProjects = styled.section`
-    
+    background-color: #8eedb1;
 `
