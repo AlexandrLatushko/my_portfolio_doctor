@@ -21,7 +21,5 @@ const StyledBtn = styled.button`
     border: none;
     background: ${theme.color.accent}; 
     
-
-
-
-`
+    
+    `

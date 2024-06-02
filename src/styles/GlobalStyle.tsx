@@ -29,6 +29,8 @@ export const GlobalStyles = createGlobalStyle`
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         color: ${theme.color.font};
+        line-height: 1.2;
+
     }
 
     section:nth-of-type(odd) { //для всех четных секшанов будет приниматься такой цвет 

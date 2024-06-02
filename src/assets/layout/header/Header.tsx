@@ -32,7 +32,6 @@ export const Header = () => {
             
     </StyledHeader>
     );
-
 };
 
 const StyledHeader = styled.header`
