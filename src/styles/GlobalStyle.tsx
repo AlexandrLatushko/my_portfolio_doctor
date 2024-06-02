@@ -9,9 +9,14 @@ export const GlobalStyles = createGlobalStyle`
         padding: 0;
         box-sizing: border-box ;
     }
+    
     a {
         text-decoration:none;
+        color: ${theme.color.font};
+        font-weight: 600;
+        font-size: 20px;
     }
+    
     ul {
         list-style-type:none;
     }
@@ -35,22 +40,5 @@ export const GlobalStyles = createGlobalStyle`
 
     }
 
-    
 
-
-
-    button {
-        
-        border: none;
-        background: ${theme.color.accent}; /* Используем background для градиента */
-        color: ${theme.color.font}; /* Цвет текста кнопки из темы */
-        padding: 15px 32px; /* Паддинг для кнопки */
-        text-align: center; /* Выравнивание текста */
-        text-decoration: none; /* Убираем подчеркивание */
-        display: inline-block; /* Делаем кнопку inline-block */
-        font-size: 16px; /* Размер текста */
-        margin: 4px 2px; /* Отступы */
-        cursor: pointer; /* Курсор при наведении */
-        border-radius: 4px; /* Скругленные углы */
-    }
 `

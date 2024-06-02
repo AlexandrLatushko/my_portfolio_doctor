@@ -59,6 +59,6 @@ const Title = styled.div`
 const Filler = styled.div<{ percentage: number }>`
     height: 10px;
     width: ${props => props.percentage}%;
-    background-color: ${theme.color.accent}; 
+    background-color: #13ADC7;
     transition: width 0.5s ease-in-out;
 `;

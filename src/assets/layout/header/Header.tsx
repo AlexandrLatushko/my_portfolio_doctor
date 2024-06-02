@@ -15,15 +15,15 @@ export const Header = () => {
                 <Icon iconId="logo" width="185" height="48" viewBox="0 0 185 48" />
                 </a>
                 <StyledHeradrMenu>
-                    <li>
-                        <a href="#">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#">Technologies</a>
-                    </li>
-                    <li>
-                        <a href="#">About me</a>
-                    </li>
+                    <ListItem>
+                        <LinkItem href="#">Projects</LinkItem>
+                    </ListItem>
+                    <ListItem>
+                        <LinkItem href="#">Technologies</LinkItem>
+                    </ListItem>
+                    <ListItem>
+                        <LinkItem href="#">About me</LinkItem>
+                    </ListItem>
                 </StyledHeradrMenu>
                 <IconsLink />
             </FlexWrapper>
@@ -36,8 +36,12 @@ export const Header = () => {
 };
 
 const StyledHeader = styled.header`
-    background-color: ${theme.color.primaryBg};
-    height: 15vh;
+    background-color: #0f1624b4;
+    padding: 20px 0;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
     
 `
 
@@ -46,3 +50,10 @@ const StyledHeradrMenu = styled.ul`
     gap: 30px;
 `;
 
+const ListItem = styled.li`
+    
+`
+
+const LinkItem = styled.a`
+    color: ${theme.color.font};
+`

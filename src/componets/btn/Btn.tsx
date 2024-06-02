@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { theme } from '../../styles/Theme';
 
 type BtnPropsType = {
     text: string
@@ -14,9 +15,13 @@ export const Btn = (props: BtnPropsType ) => {
 };
 
 const StyledBtn = styled.button`
-    border: 1px solid red;
-    border-radius:5px;
+    border-radius:25px;
     width: 240px;
     height: 60px;
-    margin-top:60px;
+    border: none;
+    background: ${theme.color.accent}; 
+    
+
+
+
 `
