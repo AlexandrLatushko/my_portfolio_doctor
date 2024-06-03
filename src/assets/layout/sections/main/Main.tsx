@@ -4,6 +4,7 @@ import { FlexWrapper } from '../../../../componets/FlexWrapper';
 import { Btn } from '../../../../componets/btn/Btn';
 import  MyPhoto  from '../../../images/myphoto.jpeg'
 import styled from 'styled-components';
+import Dreving from '../../../images/drawing.png'
 
 
 
@@ -17,7 +18,11 @@ export const Main = () => {
                         <MainText>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</MainText>
                         <Btn text={"Let’s Begin"}/>
                     </MainBlok>
-                    <ImagePhoto src={MyPhoto} alt='My Photo'/>
+                    <PhotoWrapper>
+                        <ImagePhoto src={MyPhoto} alt='My Photo'/>
+                        <ImageDreving src={Dreving} alt='dreving'/>
+                    </PhotoWrapper>
+                    
                 </FlexWrapper>
             </Container>
             
@@ -52,11 +57,23 @@ const MainText = styled.p`
 
 `
 
-const ImagePhoto = styled.img`
+const PhotoWrapper = styled.div`
+    position: relative;
+
+`
+
+const ImageDreving = styled.img`
+    position: absolute;
+    right: -77%;
+    z-index: 0;
+`
+
+const ImagePhoto = styled.img` 
+    position: relative;
     width: 380px;
     height: 450px;
     object-fit: cover;
-    border: 5px solid #8643DC; 
-    border-radius: 0 40px 0 40px; 
-    
+    border: 5px solid #8643DC;
+    border-radius: 0 40px 0 40px;
+    z-index: 1;
 `
