@@ -18,7 +18,6 @@ export const Project = (props: ProjectsPropsPype) => {
             <BtnContainer>
                 <Btn text={"Look It Up"}/>
             </BtnContainer>
-            
         </StyledProject>
     );
 };

@@ -28,5 +28,5 @@ export const Projects = () => {
 };
 
 const StyledProjects = styled.section`
-
+    padding-bottom:170px ;
 `

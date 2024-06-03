@@ -22,6 +22,8 @@ const StyledAddTeshnoloj = styled.div`
 
 const TitleTeshnoloj = styled.h3`
     text-align: center;
+    font-weight: 600;
+    font-size: 44px;
 
 `
 

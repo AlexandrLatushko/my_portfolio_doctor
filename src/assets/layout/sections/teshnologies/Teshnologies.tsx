@@ -12,7 +12,7 @@ export const Teshnologies = () => {
         <StyledTeshnologies>
             <Container>
                 <SectionsTitle>Technologies</SectionsTitle>
-                <FlexWrapper wrap='wrap' gap='50px'>
+                <FlexWrapper wrap='wrap' gap='2px'>
                     <ProgressBar percentage={40} title={'Html'}/>
                     <ProgressBar percentage={60} title={'Css, Sass'}/>
                     <ProgressBar percentage={80} title={'React'}/>
@@ -25,5 +25,4 @@ export const Teshnologies = () => {
 };
 
 const StyledTeshnologies = styled.section`
-    min-height: 100vh;
 `;
