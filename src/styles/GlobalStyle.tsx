@@ -16,6 +16,19 @@ export const GlobalStyles = createGlobalStyle`
         font-weight: 600;
         font-size: 20px;
     }
+
+    h3 {
+        margin-top: 40px;
+        text-align: center;
+        font-weight: 600;
+        font-size: 30px;
+        margin-bottom: 23px;
+    }
+
+    p {
+        font-weight: 500;
+        font-size: 18px;
+    }
     
     ul {
         list-style-type:none;
@@ -40,6 +53,10 @@ export const GlobalStyles = createGlobalStyle`
     section:nth-of-type(even) { //для всех нечетных секшанов будет приниматься такой цвет
         background-color: ${theme.color.secondaryBg};
 
+    }
+
+    section {
+        padding: 140px;
     }
 
 

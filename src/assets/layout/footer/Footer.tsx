@@ -3,21 +3,25 @@ import styled from 'styled-components';
 import { IconsLink } from '../../../componets/iconslink/IconsLink';
 import { Contacts } from '../../../componets/contakts/Contacts';
 import { theme } from '../../../styles/Theme';
+import { Container } from '../../../componets/Container';
+import { FlexWrapper } from '../../../componets/FlexWrapper';
 
 export const Footer = () => {
     return (
         <StyledFooter>
-            <Contacts/>
-            <IconsLink/>
+            <Container>
+                <FlexWrapper justify='space-between' align='center'>
+                    <Contacts/>
+                    <IconsLink/>
+                </FlexWrapper>
+                
+            </Container>
+            
         </StyledFooter>
     );
 };
 
 const StyledFooter = styled.footer`
-    min-height: 20vh;
+    /* min-height: 20vh; */
     background-color: ${theme.color.primaryBg};
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 42px;
 `

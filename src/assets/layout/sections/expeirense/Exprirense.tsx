@@ -3,18 +3,22 @@ import styled from 'styled-components';
 import { SectionsTitle } from '../../../../componets/SectionsTitle';
 import { ExprirenseItems } from './exprirenseItems/ExprirenseItems';
 import { FlexWrapper } from '../../../../componets/FlexWrapper';
+import { Container } from '../../../../componets/Container';
 
 export const Exprirense = () => {
     return (
         <StyledExprirense>
-            <SectionsTitle>Experience</SectionsTitle>
-            <ExprirenseItems/>
-            <FlexWrapper justify='space-around'>
-                <ExprirenseDeskription>Lorem  dolor sit amet, consectetur adipiscing elit, sed dempor incididunt ut labore et dolore magna adipiscin</ExprirenseDeskription>
-                <ExprirenseDeskription>Lorem  dolor sit amet, consectetur adipiscing elit, sed dempor incididunt ut labore et dolore magna adipiscin</ExprirenseDeskription>
-                <ExprirenseDeskription>Lorem  dolor sit amet, consectetur adipiscing elit, sed dempor incididunt ut labore et dolore magna adipiscin</ExprirenseDeskription>
-                <ExprirenseDeskription>Lorem  dolor sit amet, consectetur adipiscing elit, sed dempor incididunt ut labore et dolore magna adipiscin</ExprirenseDeskription>
-            </FlexWrapper>
+            <Container>
+                <SectionsTitle>Experience</SectionsTitle>
+                <ExprirenseItems/>
+                <FlexWrapper justify='space-between'>
+                    <ExprirenseDeskription>Lorem  dolor sit amet, consectetur adipiscing elit, sed dempor incididunt ut labore et dolore magna adipiscin</ExprirenseDeskription>
+                    <ExprirenseDeskription>Lorem  dolor sit amet, consectetur adipiscing elit, sed dempor incididunt ut labore et dolore magna adipiscin</ExprirenseDeskription>
+                    <ExprirenseDeskription>Lorem  dolor sit amet, consectetur adipiscing elit, sed dempor incididunt ut labore et dolore magna adipiscin</ExprirenseDeskription>
+                    <ExprirenseDeskription>Lorem  dolor sit amet, consectetur adipiscing elit, sed dempor incididunt ut labore et dolore magna adipiscin</ExprirenseDeskription>
+                </FlexWrapper>
+            </Container>
+            
 
         </StyledExprirense>
 
@@ -22,13 +26,8 @@ export const Exprirense = () => {
 };
 
 const StyledExprirense = styled.section`
-    background-color: #faddb4;
-    min-height: 100vh;
-    padding-top: 100px;
 
 `
-
-
 
 const ExprirenseDeskription = styled.p`
     max-width: 260px;
