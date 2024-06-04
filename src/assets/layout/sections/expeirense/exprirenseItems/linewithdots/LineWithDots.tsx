@@ -41,14 +41,14 @@ const Container = styled.div`
 `;
 
 const Line = styled.div`
-    top: 50%;
-    left: 0;
-    right: 0;
     height: 8px;
     background: ${theme.color.accent};
 
     position: absolute;
     transform: translateY(-50%);
+    top: 50%;
+    left: 0;
+    right: 0;
 `;
 
 const DotWrapper = styled.div`
