@@ -20,6 +20,4 @@ const StyledBtn = styled.button`
     height: 60px;
     border: none;
     background: ${theme.color.accent}; 
-    
-    
     `

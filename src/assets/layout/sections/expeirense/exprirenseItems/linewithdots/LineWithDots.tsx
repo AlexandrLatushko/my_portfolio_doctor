@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { theme } from '../../../../../../styles/Theme';
 
 type  LineWithDotspropsStyle = {
     left?: string
@@ -40,12 +41,13 @@ const Container = styled.div`
 `;
 
 const Line = styled.div`
-    position: absolute;
     top: 50%;
     left: 0;
     right: 0;
     height: 8px;
-    background-color: #6060f6;
+    background: ${theme.color.accent};
+
+    position: absolute;
     transform: translateY(-50%);
 `;
 
@@ -61,10 +63,12 @@ const Dot = styled.div<LineWithDotspropsStyle>`
     height: 25px;
     background-color: #f9f9f9;
     border-radius: 50%;
-    z-index: 1;
-    position: absolute;
+    
     bottom: 28px;
+    position: absolute;
+    
     left: ${({left}) => left};
+    z-index: 1;
 `;
 
 const Label = styled.div`

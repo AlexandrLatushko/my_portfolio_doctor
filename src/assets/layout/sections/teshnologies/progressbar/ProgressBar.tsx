@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { theme } from '../../../../../styles/Theme';
 
 type ProgressBarContainerProps = {
     percentage: number;
@@ -55,7 +56,7 @@ const Title = styled.span`
 const Filler = styled.div<{ percentage: number }>`
     height: 10px;
     width: ${props => props.percentage}%;
-    background-color: #13ADC7;
+    background: ${theme.color.accent};
     transition: width 0.5s ease-in-out;
     border-radius: 25px;
 `;
