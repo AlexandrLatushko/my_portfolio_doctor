@@ -7,9 +7,18 @@ export const AddTeshnoloj = () => {
         <StyledAddTeshnoloj>
             <TitleTeshnoloj>Additional technologies and skills</TitleTeshnoloj>
             <TeshnolohIcons>
-                <Icon iconId='gitcolor' height='100px' width='100px' viewBox='0 0 100 100'/>
-                <Icon iconId='githubcolor'height='100px' width='100px' viewBox='0 0 100 100'/>
-                <Icon iconId='figmacolor'height='100px' width='100px' viewBox='0 0 100 100'/>
+
+                <IconWrwpper>
+                    <Icon iconId='gitcolor' height='100px' width='100px' viewBox='0 0 100 100'/>
+                </IconWrwpper>
+                
+                <IconWrwpper>
+                    <Icon iconId='githubcolor'height='100px' width='100px' viewBox='0 0 100 100'/>
+                </IconWrwpper>
+
+                <IconWrwpper>
+                    <Icon iconId='figmacolor'height='100px' width='100px' viewBox='0 0 100 100'/>
+                </IconWrwpper>
             </TeshnolohIcons>
         </StyledAddTeshnoloj>
     );
@@ -32,4 +41,7 @@ const TeshnolohIcons = styled.div`
     display: flex;
     justify-content: center;
     gap: 50px
+`
+const IconWrwpper = styled.a`
+    
 `

@@ -10,11 +10,24 @@ export const GlobalStyles = createGlobalStyle`
         box-sizing: border-box ;
     }
     
+    body {
+        margin: 0;
+        font-family:'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        color: ${theme.color.font};
+        line-height: 1.2;
+
+    }
+
     a {
         text-decoration:none;
         color: ${theme.color.font};
         font-weight: 600;
         font-size: 20px;
+        cursor: pointer;
     }
 
     h3 {
@@ -34,18 +47,6 @@ export const GlobalStyles = createGlobalStyle`
         list-style-type:none;
     }
 
-    body {
-        margin: 0;
-        font-family:'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-        sans-serif;
-        -webkit-font-smoothing: antialiased;
-        -moz-osx-font-smoothing: grayscale;
-        color: ${theme.color.font};
-        line-height: 1.2;
-
-    }
-
     section:nth-of-type(odd) { //для всех четных секшанов будет приниматься такой цвет 
         background-color: ${theme.color.primaryBg};
     }
@@ -57,6 +58,10 @@ export const GlobalStyles = createGlobalStyle`
 
     section {
         padding: 140px;
+    }
+
+    button {
+        cursor: pointer;
     }
 
 
