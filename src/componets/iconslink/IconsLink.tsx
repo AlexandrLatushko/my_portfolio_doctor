@@ -6,13 +6,25 @@ export const IconsLink = () => {
     return (
         <StyledIconsLinks>
             <SryledIconsLink>
-                <a href='#'> {<Icon iconId='githubsmoll'/>} </a>
+
+                <IconContainer>
+                    <a href='#'> {<Icon iconId='githubsmoll' width='32' height='32' viewBox="0 0 32 32"/>} </a>
+                </IconContainer>
+
             </SryledIconsLink>
             <SryledIconsLink>
-                <a href='#'> {<Icon iconId='telegramm'/>} </a>
-            </SryledIconsLink>
+
+                <IconContainer>
+                    <a href='#'> {<Icon iconId='telegramm' width='32' height='32' viewBox="0 0 32 32"/>} </a>
+                </IconContainer>
+
+            </SryledIconsLink>    
             <SryledIconsLink>
-                <a href='#'> {<Icon iconId='linkedin'/>} </a>
+            
+                <IconContainer>
+                    <a href='#'> {<Icon iconId='linkedin' width='32' height='32' viewBox="0 0 32 32"/>} </a>
+                </IconContainer>
+
             </SryledIconsLink>
         </StyledIconsLinks>
     );
@@ -20,11 +32,19 @@ export const IconsLink = () => {
 
 const StyledIconsLinks = styled.ul`
     display: flex;
-    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
     margin: 25px 0px;
 `
 
 const SryledIconsLink = styled.li`
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 `
-
+const IconContainer = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`

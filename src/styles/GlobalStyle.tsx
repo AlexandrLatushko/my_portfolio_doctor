@@ -57,7 +57,7 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     section {
-        padding: 140px;
+        padding: 140px 0;
     }
 
     button {

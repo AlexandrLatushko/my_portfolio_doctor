@@ -15,12 +15,12 @@ export const Main = () => {
                 <FlexWrapper justify='space-between' align='center' >
                     <MainBlok>
                         <MainTitle>Lorem ipsum dolor amet</MainTitle>
-                        <MainText>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</MainText>
+                        <MainText>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</MainText>
                         <Btn text={"Let’s Begin"}/>
                     </MainBlok>
                     <PhotoWrapper>
                         <ImagePhoto src={MyPhoto} alt='My Photo'/>
-                        <ImageDreving src={Dreving} alt='dreving'/>
                     </PhotoWrapper>
                     
                 </FlexWrapper>
@@ -34,7 +34,7 @@ export const Main = () => {
 const StyledMain = styled.section`
     min-height: 100vh;
     display: flex;
-
+    overflow-x: clip;
 `
 
 const MainBlok = styled.div`
@@ -54,26 +54,32 @@ const MainText = styled.p`
     color: #bcbcbc;
     max-width: 480px;
     margin: 15px 0 60px;
-
 `
 
 const PhotoWrapper = styled.div`
+    max-width: 100%;
     position: relative;
+    
+    &::before {
+        content: " ";
+        display: inline-block;
+        width: 660px;
+        height: 660px;
+        background-image: url(${Dreving});
 
+        position: absolute;
+        z-index: 1;
+    }
 `
 
-const ImageDreving = styled.img`
-    position: absolute;
-    right: -77%;
-    z-index: 0;
-`
 
 const ImagePhoto = styled.img` 
-    position: relative;
     width: 380px;
     height: 450px;
     object-fit: cover;
     border: 5px solid #8643DC;
     border-radius: 0 40px 0 40px;
-    z-index: 1;
+
+    position: relative;
+    z-index: 2;
 `
