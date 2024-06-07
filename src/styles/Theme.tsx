@@ -4,7 +4,8 @@ export const theme = {
         secondaryBg: '#161D2A',
         accent: 'linear-gradient(to right, #13ADC7, #6978D1, #945DD6)',
 
-        font: '#ffffff'
+        font: '#ffffff',
+        fontP:'#bcbcbc' 
     },
 
     media: {

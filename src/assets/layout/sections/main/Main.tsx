@@ -5,6 +5,8 @@ import { Btn } from '../../../../componets/btn/Btn';
 import  MyPhoto  from '../../../images/myphoto.jpeg'
 import styled from 'styled-components';
 import Dreving from '../../../images/drawing.png'
+import { theme } from '../../../../styles/Theme';
+import { font } from '../../../../styles/Common';
 
 
 
@@ -12,7 +14,7 @@ export const Main = () => {
     return (
         <StyledMain>
             <Container>
-                <FlexWrapper justify='space-between' align='center' >
+                <FlexWrapper justify='space-around' align='center'wrap='wrap' >
                     <MainBlok>
                         <MainTitle>Lorem ipsum dolor amet</MainTitle>
                         <MainText>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -44,14 +46,24 @@ const MainBlok = styled.div`
 `
 
 const MainTitle = styled.h1`
-    font-weight: 600;
-    font-size: 54px;
+    ${font({weight:600,
+            Fmax: 54,
+            Fmin: 40
+    })}
+    /* font-weight: 600;
+    font-size: 54px; */
 `
 
 const MainText = styled.p`
-    font-weight: 500;
+    ${font({
+        weight:500,
+        color: theme.color.fontP,
+        Fmax: 18,
+        Fmin: 16
+    })}
+    /* font-weight: 500;
     font-size: 18px;
-    color: #bcbcbc;
+    color: #bcbcbc; */
     max-width: 480px;
     margin: 15px 0 60px;
 `
@@ -70,6 +82,10 @@ const PhotoWrapper = styled.div`
         position: absolute;
         z-index: 1;
     }
+
+    @media ${theme.media.tablet} {
+        margin-top: 30px;
+    }
 `
 
 
@@ -82,4 +98,9 @@ const ImagePhoto = styled.img`
 
     position: relative;
     z-index: 2;
+
+    @media ${theme.media.mobile} {
+        width: 340px;
+        height: 400px;
+    }
 `

@@ -4,11 +4,11 @@ import { theme } from "../../../../styles/Theme";
 export const MobileMenu = () => {
     return (
         <ContainerMenu>
-            <BurgerButton isOpen={true}>
+            <BurgerButton isOpen={false}>
                 <span></span>
             </BurgerButton>
 
-            <MobileMenuPopup isOpen={true}>
+            <MobileMenuPopup isOpen={false}>
                 <ul>
                     <ListItem>
                         <LinkItem href="#">Projects</LinkItem>
