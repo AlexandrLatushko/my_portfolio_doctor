@@ -50,7 +50,6 @@ const StyledExprirense = styled.section`
 
 const List = styled.ul`
     display: flex;
-
     justify-content: space-between;
     align-items: center;
     gap: 35px;
@@ -68,6 +67,16 @@ const List = styled.ul`
         top: 40px;
         left: 11%;
         z-index: -1;
+
+        @media ${theme.media.tablet}{
+            top: -25px;
+
+        }
+    }
+
+    @media ${theme.media.tablet} {
+        /* flex-grow: 1; */
+        flex-wrap: wrap;
     }
 `
 

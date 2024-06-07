@@ -19,7 +19,6 @@ export const GlobalStyles = createGlobalStyle`
         -moz-osx-font-smoothing: grayscale;
         color: ${theme.color.font};
         line-height: 1.2;
-
     }
 
     a {
@@ -33,7 +32,7 @@ export const GlobalStyles = createGlobalStyle`
     h3 {
         margin-top: 40px;
         text-align: center;
-        
+
         font-weight: 600;
         font-size: 30px;
         margin-bottom: 23px;
