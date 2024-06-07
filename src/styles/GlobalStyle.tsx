@@ -33,6 +33,7 @@ export const GlobalStyles = createGlobalStyle`
     h3 {
         margin-top: 40px;
         text-align: center;
+        
         font-weight: 600;
         font-size: 30px;
         margin-bottom: 23px;
@@ -57,7 +58,11 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     section {
-        padding: 140px 0;
+        padding: 100px 0;
+
+        @media ${theme.media.mobile} {
+            padding: 80px 0;
+        }
     }
 
     button {
