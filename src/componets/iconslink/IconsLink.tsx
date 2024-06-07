@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Icon } from '../icons/Icon';
+import { theme } from '../../styles/Theme';
 
 export const IconsLink = () => {
     return (
@@ -36,6 +37,10 @@ const StyledIconsLinks = styled.ul`
     align-items: center;
     gap: 25px;
     margin: 25px 0px;
+
+    @media ${theme.media.tablet} {
+        display: none;
+    }
 `
 
 const SryledIconsLink = styled.li`

@@ -65,7 +65,7 @@ const List = styled.ul`
         height: 8px;
         background: ${theme.color.accent};
         position: absolute;
-        top: 27px;
+        top: 40px;
         left: 11%;
         z-index: -1;
     }
@@ -79,16 +79,20 @@ const ListItem = styled.li`
 `
 
 const Lible = styled.span`
-    
+    font-weight: 600;
+    font-size: 26px;
 `
 
 const Dot = styled.div`
+    margin-bottom:25px;
     width: 25px;
     height: 25px;
     border-radius: 50%;
     background-color: ${theme.color.font};
 `
 const Deskription = styled.p`
-    
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
 `
 
