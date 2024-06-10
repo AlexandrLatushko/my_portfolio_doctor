@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { theme } from '../../styles/Theme';
 
 export const Contacts = () => {
     return (
@@ -19,8 +20,12 @@ export const Contacts = () => {
 const StyledContakts = styled.div`
     display: flex;
     text-align: start;
-    gap: 130px;
+    gap: 160px;
     ;
+
+    @media ${theme.media.mobile}{
+        gap: 30px;
+    }
 `
 
 const Tel = styled.div`

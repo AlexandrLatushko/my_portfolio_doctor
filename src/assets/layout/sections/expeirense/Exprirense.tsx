@@ -70,12 +70,10 @@ const List = styled.ul`
 
         @media ${theme.media.tablet}{
             top: -25px;
-
         }
     }
 
     @media ${theme.media.tablet} {
-        /* flex-grow: 1; */
         flex-wrap: wrap;
     }
 `

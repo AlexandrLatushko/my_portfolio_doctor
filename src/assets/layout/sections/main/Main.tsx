@@ -37,12 +37,21 @@ const StyledMain = styled.section`
     min-height: 100vh;
     display: flex;
     overflow-x: clip;
+
+    ${FlexWrapper}{
+        gap: 30px;
+        flex: 1 1 100%;
+    }
 `
 
 const MainBlok = styled.div`
     max-width: 550px;
     width: 100%;
     text-align: start;
+    
+    @media ${theme.media.tablet} {
+        text-align: center;
+    }
 `
 
 const MainTitle = styled.h1`
