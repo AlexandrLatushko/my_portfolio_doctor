@@ -12,7 +12,7 @@ export const Projects = () => {
         <StyledProjects>
             <Container>
                 <SectionsTitle>Projects</SectionsTitle>
-                    <FlexWrapper wrap={'wrap'} justify={'space-around'} gap={'20px'}>
+                    <FlexWrapper wrap={'wrap'} justify={'space-around'} gap={'40px'}>
                         <Project src={projPhoto} title={"PROJECT 1"} 
                         text={"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."}/>
                         <Project src={projPhoto} title={"PROJECT 2"} 

@@ -14,16 +14,17 @@ export const Main = () => {
     return (
         <StyledMain>
             <Container>
-                <FlexWrapper justify='space-around' align='center'wrap='wrap' >
+                <FlexWrapper justify='space-between' align='center' wrap='wrap' >
                     <MainBlok>
                         <MainTitle>Lorem ipsum dolor amet</MainTitle>
                         <MainText>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</MainText>
                         <Btn text={"Let’s Begin"}/>
                     </MainBlok>
-                    <PhotoWrapper>
+                    <RelativeContainer>
+                        <PhotoWrapper></PhotoWrapper>
                         <ImagePhoto src={MyPhoto} alt='My Photo'/>
-                    </PhotoWrapper>
+                    </RelativeContainer>
                     
                 </FlexWrapper>
             </Container>
@@ -33,6 +34,7 @@ export const Main = () => {
         
 };
 
+
 const StyledMain = styled.section`
     min-height: 100vh;
     display: flex;
@@ -41,6 +43,15 @@ const StyledMain = styled.section`
     ${FlexWrapper}{
         gap: 30px;
         flex: 1 1 100%;
+
+        @media ${theme.media.tablet2} {
+            justify-content: center;
+        }
+    }
+
+    ${Container}{
+        display: flex;
+        justify-content: center;
     }
 `
 
@@ -77,39 +88,55 @@ const MainText = styled.p`
     margin: 15px 0 60px;
 `
 
-const PhotoWrapper = styled.div`
-    max-width: 100%;
+
+const RelativeContainer = styled.div`
     position: relative;
+    max-width: 400px;
+    width:100%;
+    height:470px;
     
-    &::before {
-        content: " ";
-        display: inline-block;
-        width: 660px;
+    &::after {
+        content: url(${Dreving});
+        max-width: 660px;
+        width: 100%;
         height: 660px;
-        background-image: url(${Dreving});
 
         position: absolute;
-        z-index: 1;
-    }
-
-    @media ${theme.media.tablet} {
-        margin-top: 30px;
+        top: 66px;
+        left: -5px;
+        z-index: 0;
     }
 `
+const PhotoWrapper = styled.div`
+    max-width: 400px;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index:1;
+    width: 460px;
+    height: 470px;
+    background-image: linear-gradient(150deg, #8643DC, #00C0FD);
+    border-radius: 60px 0 60px 0;
 
-
+    @media ${theme.media.tablet} {
+        width: 350px;
+        height: 400px;
+    }
+`
 const ImagePhoto = styled.img` 
     width: 380px;
     height: 450px;
     object-fit: cover;
-    border: 5px solid #8643DC;
-    border-radius: 0 40px 0 40px;
+    border-radius: 60px 0 60px 0;
+    z-index:2;
 
-    position: relative;
-    z-index: 2;
+    position: absolute;
+    left: 10px;
+    top: 10px;
 
-    @media ${theme.media.mobile} {
-        width: 340px;
-        height: 400px;
+    @media ${theme.media.tablet}{
+        width: 330px;
+        height: 380px;
     }
+    
 `
