@@ -7,8 +7,7 @@ import styled from 'styled-components';
 import Dreving from '../../../images/drawing.png'
 import { theme } from '../../../../styles/Theme';
 import { font } from '../../../../styles/Common';
-
-
+import Typewriter from 'typewriter-effect';
 
 export const Main = () => {
     return (
@@ -16,12 +15,21 @@ export const Main = () => {
             <Container>
                 <FlexWrapper justify='space-between' align='center' wrap='wrap' >
                     <MainBlok>
-                        <MainTitle>Lorem ipsum dolor amet</MainTitle>
+                        <MainTitle>
+                        <Typewriter
+                            options={{
+                                strings: ['Lorem ipsum dolor amet'],
+                                autoStart: true,
+                                loop: true,
+                            }}
+                            />
+                        </MainTitle>
                         <MainText>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
                             sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</MainText>
                         <Btn text={"Let’s Begin"}/>
                     </MainBlok>
                     <RelativeContainer>
+                        
                         <PhotoWrapper></PhotoWrapper>
                         <ImagePhoto src={MyPhoto} alt='My Photo'/>
                     </RelativeContainer>

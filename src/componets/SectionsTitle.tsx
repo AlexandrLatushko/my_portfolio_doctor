@@ -3,7 +3,7 @@ import { font } from "../styles/Common";
 
 export const SectionsTitle = styled.h2`
     text-align: start;
-    padding: 100px 0 70px;
+    padding: 0px 0 70px;
     ${font({
         weight:600,
         Fmax:46,
